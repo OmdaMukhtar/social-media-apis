@@ -30,4 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => 'http://your-callback-url',
+    ],
+
+    'facebook' => [
+        'client_id' => '2340070759449491',//env('GITHUB_CLIENT_ID'),
+        'client_secret' => 'a6f2f28fc3058b1c07848ad5ec49b69a',//env('GITHUB_CLIENT_SECRET'),
+        'redirect' => 'http://localhost:8000/login/facebook/callback',
+    ],
+
 ];
